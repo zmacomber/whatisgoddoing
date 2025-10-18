@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>What Is God Doing In The World Today?</title>
+	<link href="https://cdn.plyr.io/3.7.8/plyr.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <style>
         @-webkit-keyframes fadein {
@@ -184,7 +185,10 @@
     </div>
     <div class="content">
         <button class="fadein-medium" onclick="listen()">Listen</button>
-        <audio src="http://midcoastbaptistchurch.com/data/audio/2017-04-06%20-%20TH%20-%20PBM%20-%20What%20Is%20God%20Doing%20In%20The%20World%20Today%20Final%20Edit.mp3" preload controls></audio>
+		<audio id="player" controls>
+  			<source src="http://midcoastbaptistchurch.com/data/audio/2017-04-06%20-%20TH%20-%20PBM%20-%20What%20Is%20God%20Doing%20In%20The%20World%20Today%20Final%20Edit.mp3" type="audio/mpeg" />
+		</audio>
+        <!-- <audio src="http://midcoastbaptistchurch.com/data/audio/2017-04-06%20-%20TH%20-%20PBM%20-%20What%20Is%20God%20Doing%20In%20The%20World%20Today%20Final%20Edit.mp3" preload controls></audio> -->
     </div>
     <div class="footer">
         <span class="fadein-slow produced">
@@ -193,5 +197,8 @@
 			<a href="http://carsonriverbaptistchurch.com">Carson River Baptist Church</a>
 		</span>
     </div>
+	<script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+	<script>const player = new Plyr('#player');</script>
 </body>
+
 </html>

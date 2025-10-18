@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What Is God Doing In The World Today?</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        @-webkit-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; visibility:visible; }
+        }
+        @-webkit-keyframes fadeout {
+            from { opacity: 1; }
+            to   { opacity: 0; visibility:hidden; }
+        }
+        @-webkit-keyframes loader {
+            from { background-position: 0; }
+            to   { background-position: -1600px 0; }
+        }
+        @-moz-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; visibility:visible; }
+        }
+        @-moz-keyframes fadeout {
+            from { opacity: 1; }
+            to   { opacity: 0; visibility:hidden; }
+        }
+        @-moz-keyframes loader {
+            from { background-position: 0; }
+            to   { background-position: -1600px 0; }
+        }
+        @-ms-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; visibility:visible; }
+        }
+        @-ms-keyframes fadeout {
+            from { opacity: 1; }
+            to   { opacity: 0; visibility:hidden; }
+        }
+        @-ms-keyframes loader {
+            from { background-position: 0; }
+            to   { background-position: -1600px 0; }
+        }
+        @-o-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; visibility:visible; }
+        }
+        @-o-keyframes fadeout {
+            from { opacity: 1; }
+            to   { opacity: 0; visibility:hidden; }
+        }
+        @-o-keyframes loader {
+            from { background-position: 0; }
+            to   { background-position: -1600px 0; }
+        }
+        @keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; visibility:visible; }
+        }
+        @keyframes fadeout {
+            from { opacity: 1; }
+            to   { opacity: 0; visibility:hidden; }
+        }
+        @keyframes loader {
+            from { background-position: 0; }
+            to   { background-position: -1600px 0; }
+        }
+        html,body { height:100%; min-height:530px; min-width:500px; }
+        body {
+            -webkit-animation: loader 300s steps(10000) infinite;
+            -moz-animation: loader 300s steps(10000) infinite;
+            -o-animation: loader 300s steps(10000) infinite;
+            animation: loader 300s steps(10000) infinite;
+            background: url(https://upload.wikimedia.org/wikipedia/commons/5/52/Clouds_and_beauty.JPG) repeat;
+            font-family:'Roboto', sans-serif;
+            font-weight: bold;
+            margin:0;
+            padding:0;
+            text-align:center;
+            text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.7);
+            width:100%;
+        }
+        div {
+            position:relative;
+        }
+        div * {
+            display:block;
+            margin:0;
+            padding:0;
+        }
+        div.content {
+            color:#444;
+            height:25%;
+        }
+        div.content * {
+            left:0;
+            margin:auto;
+            position:relative;
+            right:0;
+        }
+        div.content audio {
+            border:1px solid #444;
+            display:none;
+            width:350px;
+        }
+        div.content button {
+            color:#333;
+            cursor:pointer;
+            background-color:#eee;
+            border:1px solid #444;
+            font-size:40px;
+            padding:10px;
+            width:350px;
+        }
+        div.footer {
+            color:#333;
+            height:25%;
+        }
+        div.header {
+            color:#555;
+            font-size:60px;
+            height:40%;
+        }
+        div.header {
+            padding:40px;
+        }
+        .fadein-fast {
+            -webkit-animation: fadein 5s;
+            -moz-animation: fadein 5s;
+            -o-animation: fadein 5s;
+            animation: fadein 5s;
+        }
+        .fadein-medium {
+            -webkit-animation: fadein 10s; 
+            -moz-animation: fadein 10s;
+            -o-animation: fadein 10s; 
+            animation: fadein 10s;
+        }
+        .fadein-slow {
+            -webkit-animation: fadein 15s; 
+            -moz-animation: fadein 15s;
+            -o-animation: fadein 15s; 
+            animation: fadein 15s;
+        }
+        .fadeout-medium {
+            -webkit-animation: fadeout 10s; 
+            -webkit-animation-fill-mode: forwards;
+            -moz-animation: fadeout 10s; 
+            -moz-animation-fill-mode: forwards;
+            -o-animation: fadeout 10s; 
+            -o-animation-fill-mode: forwards;
+            animation: fadeout 10s;
+            animation-fill-mode: forwards;
+        }
+        .produced {
+            font-size:20px;
+            left:0;
+            margin:auto;
+            position:relative;
+            right:0;
+            top:50%;
+        }
+        .produced a {
+            color:#333;
+            display:inline;
+            padding:0;
+        }
+    </style>
+    <script> 
+        function listen() {
+            var listen = document.getElementsByTagName('button')[0];
+            listen.className = "fadeout-medium";
+            var audio = document.getElementsByTagName('audio')[0];
+            audio.className = "fadein-medium";
+            audio.style.display = "block"; 
+            audio.play();
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <span class="fadein-fast">What Is God Doing In The World Today?</span>
+    </div>
+    <div class="content">
+        <button class="fadein-medium" onclick="listen()">Listen</button>
+        <audio src="http://midcoastbaptistchurch.com/data/audio/2017-04-06%20-%20TH%20-%20PBM%20-%20What%20Is%20God%20Doing%20In%20The%20World%20Today%20Final%20Edit.mp3" preload controls></audio>
+    </div>
+    <div class="footer">
+        <span class="fadein-slow produced">
+			Produced by <a href="http://midcoastbaptistchurch.com">Mid-Coast Baptist Church</a><br>
+			And<br>
+			<a href="http://carsonriverbaptistchurch.com">Carson River Baptist Church</a>
+		</span>
+    </div>
+</body>
+</html>
